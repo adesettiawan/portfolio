@@ -9,14 +9,14 @@ export default function Home() {
             <section className="hero">
                 <div className="container">
                     <div className="text-wrapper">
-                        <h1 className="title">Hallo, Nama saya Ade Setiawan</h1>
+                        <h1 className="title">Hi, {`I'm`} saya Ade Setiawan</h1>
                         <p className="desc">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Exercitationem culpa porro voluptatem aliquam
-                            magni, possimus expedita fugiat labore doloribus
-                            excepturi ducimus fuga eius aperiam assumenda
-                            doloremque provident incidunt eaque quae molestias
-                            illo nobis recusandae.
+                            I am a fresh graduate at Politeknik Negeri Lampung.
+                            I have the ability to build a website using the PHP
+                            programming language using frameworks such as
+                            Codeigniter and Laravel, I am also interested in
+                            learning new knowledge, currently studying frontend
+                            developer using react js.
                         </p>
                         <div className="contact-button">
                             <Link href="/cv">
@@ -25,7 +25,7 @@ export default function Home() {
                                 </a>
                             </Link>
                             <Link href="/contact">
-                                <a className="cta">Kontak Saya</a>
+                                <a className="cta">Hire Me</a>
                             </Link>
                         </div>
                     </div>

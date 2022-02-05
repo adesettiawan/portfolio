@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Navbar from "../components/navbar";
-import portfolio1 from "../public/portfolio1.png";
-import portfolio2 from "../public/portfolio2.png";
+import portfolio1 from "../public/portfolio.png";
+import portfolio2 from "../public/portfolio1.png";
 
 export default function Portfolio() {
     return (
@@ -13,8 +13,7 @@ export default function Portfolio() {
                     <div className="text-wrapper text-full">
                         <h4 className="section-title">Portfolio</h4>
                         <p className="desc">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit.
+                            Portfolio yang sudah dibuat sebagai berikut:
                         </p>
 
                         <div className="portfolio-wrapper">
@@ -26,10 +25,10 @@ export default function Portfolio() {
                                 />
 
                                 <h4 className="portfolio-name">
-                                    Buildings App
+                                    Company Profile Information System
                                 </h4>
                                 <div className="portfolio-category">
-                                    Web Developer
+                                    Frontend Developer
                                 </div>
                             </div>
 
@@ -40,11 +39,9 @@ export default function Portfolio() {
                                     className="portfolio-img"
                                 />
 
-                                <h4 className="portfolio-name">
-                                    Medical Consultant App
-                                </h4>
+                                <h4 className="portfolio-name">Courses App</h4>
                                 <div className="portfolio-category">
-                                    Web Developer
+                                    UI Design
                                 </div>
                             </div>
                         </div>

@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { withRouter } from "next/router";
+import { Fragment } from "react";
 
 function Navbar({ router }) {
+    const menus = [
+        { name: "Home", href: "/" },
+        { name: "About", href: "/about" },
+        { name: "Portfolio", href: "/portfolio" },
+        { name: "Contact", href: "/contact" },
+    ];
     return (
         <nav className="navbar">
             <div className="container">
@@ -10,26 +17,25 @@ function Navbar({ router }) {
                 </Link>
 
                 <ul className="nav-links">
-                    <li>
-                        <Link href="/">
-                            <a className="nav-item active">Home</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/about">
-                            <a className="nav-item">About</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/portfolio">
-                            <a className="nav-item">Portfolio</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/contact">
-                            <a className="nav-item">Contact</a>
-                        </Link>
-                    </li>
+                    {menus.map((menu, index) => {
+                        return (
+                            <Fragment key={index}>
+                                <li>
+                                    <Link href={menu.href}>
+                                        <a
+                                            className={`nav-item ${
+                                                router.pathname == menu.href
+                                                    ? "active"
+                                                    : ""
+                                            }`}
+                                        >
+                                            {menu.name}
+                                        </a>
+                                    </Link>
+                                </li>
+                            </Fragment>
+                        );
+                    })}
                 </ul>
             </div>
         </nav>
